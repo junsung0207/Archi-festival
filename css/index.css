@@ -3,13 +3,19 @@ html {
     font-family: "pfstar", sans-serif;
 }
 
+body{
+  -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
+}
+
 .main_background{
   display:flex;
   flex-direction:column;
+  align-items: center;
   position:absolute;
   margin:0;
   width:100%;
-  height:920px;
+
 
   /* background-color:gray; */
 }
@@ -28,7 +34,7 @@ html {
   width:30%;
   position:relative;
   display:block;
-  margin: 10px 0 0 700px;
+  margin: 10px 0 0 50%;
   font-family:"pfstar",cursive;
   font-size:30pt;
   text-align:center;
@@ -41,7 +47,7 @@ html {
   background-size:cover;
 
   position:absolute;
-  margin: 300px 0 0 710px;
+  margin: 300px 0 0 0;
   /* margin: 50px auto; */
 
   background-color:white;
@@ -51,7 +57,7 @@ html {
   position:absolute;
   width:520px;
   height:440px;
-  margin: 300px 0 0 710px;
+  margin: 300px 0 0 0;
   background-image:url("../image/goobongwan.png");
   background-size:cover;
   background-color:transparent;
@@ -66,10 +72,11 @@ html {
   height:100px;
   display:block;
   position:absolute;
-  margin: 450px 0 0 760px;
+  margin: 450px 300px 0 0;
   z-index:2;
-  
+
   cursor:pointer;
+  /* border:1px solid black; */
 }
 
 .goobongwan_in{
@@ -78,7 +85,7 @@ html {
   position:absolute;
   width:460px;
   height:280px;
-  margin:280px 0 0 180px;
+  margin:280px 1040px 0 0;
   background-image:url("../image/sinbongwan_in.png");
 
   border-radius: 20px;
@@ -99,7 +106,7 @@ html {
   width:280px;
   height:80px;
   margin:0 auto;
-  margin-top:520px;
+  margin-top:500px;
   border-radius:300px;
 
   display:flex;
