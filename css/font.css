@@ -1,0 +1,19 @@
+@font-face {
+  src: url("../font/PFstardust.ttf");
+  font-family: "pfstar";
+}
+
+@font-face {
+  src: url("../font/PFstardust+bold.ttf");
+  font-family: "pfstar-bold";
+}
+
+@font-face {
+  src: url("../font/PFstardustS.ttf");
+  font-family: "pfstar-s";
+}
+
+@font-face {
+  src: url("../font/PFstardustS+Bold.ttf");
+  font-family: "pfstar-s-bold";
+}

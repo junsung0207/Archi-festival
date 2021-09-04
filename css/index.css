@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "pfstar", sans-serif;
+}
+
+.main_background{
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  margin:0;
+  width:100%;
+  height:920px;
+
+  /* background-color:gray; */
+}
+
+#Maintext{
+  width:100%;
+  position:relative;
+  display:block;
+  margin: 50px 0 0 0;
+  font-family: "pfstar-bold", cursive;
+  font-size:60pt;
+  text-align: center;
+}
+
+#Suptext{
+  width:30%;
+  position:relative;
+  display:block;
+  margin: 10px 0 0 700px;
+  font-family:"pfstar",cursive;
+  font-size:30pt;
+  text-align:center;
+}
+
+.mapbackdiv{
+  width:520px;
+  height:440px;
+  background-image:url("../image/Mainmap.png");
+  background-size:cover;
+
+  position:absolute;
+  margin: 300px 0 0 710px;
+  /* margin: 50px auto; */
+
+  background-color:white;
+}
+
+.goobongwan{
+  position:absolute;
+  width:520px;
+  height:440px;
+  margin: 300px 0 0 710px;
+  background-image:url("../image/goobongwan.png");
+  background-size:cover;
+  background-color:transparent;
+
+
+  /* background-color:yellow; */
+}
+
+
+.goobongwan_hover{
+  width:100px;
+  height:100px;
+  display:block;
+  position:absolute;
+  margin: 450px 0 0 760px;
+  z-index:2;
+  
+  cursor:pointer;
+}
+
+.goobongwan_in{
+  display:block;
+  opacity:0;
+  position:absolute;
+  width:460px;
+  height:280px;
+  margin:280px 0 0 180px;
+  background-image:url("../image/sinbongwan_in.png");
+
+  border-radius: 20px;
+}
+
+.goobongwan_hover:hover ~ .goobongwan{
+  transform: scale( 1.05 );
+  transition:0.2s;
+}
+
+.goobongwan_hover:hover ~ .goobongwan_in{
+  opacity:1;
+  transition:0.2s;
+}
+
+
+.startbutton{
+  width:280px;
+  height:80px;
+  margin:0 auto;
+  margin-top:520px;
+  border-radius:300px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+
+  background-color:white;
+  border-width: 5px;
+  border-color:black;
+  border:solid;
+  cursor:pointer;
+}
+
+.startbutton:hover{
+  background-color:black;
+  color:white;
+  border-color:white;
+  transition:0.2s;
+}
+
+.startbutton p {
+  text-align: center;
+  font-size:40pt;
+
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
