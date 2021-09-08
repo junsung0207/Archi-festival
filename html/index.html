@@ -5,35 +5,59 @@
     <title></title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/warning.css">
+    <link rel="stylesheet" href="../css/cardnews.css">
   </head>
   <body>
     <div class="main_background">
       <div id="Maintext">현실에선 건축학도인 내가,<br>이 세계에선 픽셀?!</div>
       <div id="Suptext">한양대 건축계열 축제</div>
+      <p> 건물 클릭시, 해당 예약 페이지로 이동합니다.</p>
       <div class="mapbackdiv"></div>
 
-      <div id="goobongwan_hover" class="hovercards"></div>
+      <div id="goobongwan_hover" class="hovercards" onclick="open_warning()"></div>
       <img src="../image/goobongwan.png" alt="" id="goobongwan" class="mapbackcards">
-      <div class="goobongwan_in"></div>
+      <div id="goobongwan_in" class="hoverbox_in"></div>
+      <div class="warning">
+        <div class="warning_close_box" onclick="close_warning()"></div>
+        <p>해당 컨텐츠는 예약 시스템이 <br>없습니다.</p>
+      </div>
 
-      <div id="sinbongwan_hover" class="hovercards"></div>
-      <img src="../image/sinbongwan.png" alt="" id="sinbongwan" class="mapbackcards">
-      <div class="sinbongwan_in"></div>
+      <div id="sinbongwan_hover" class="hovercards" onclick="location.href='https://www.google.com/intl/ko_kr/forms/about/'"></div>
+      <img src="../image/sinbongwan.png" alt="" id="sinbongwan" class="mapbackcards" >
+      <div id="sinbongwan_in" class="hoverbox_in"></div>
 
-      <div id="nochun_hover" class="hovercards"></div>
+      <div id="nochun_hover" class="hovercards" onclick="location.href='https://www.google.com/intl/ko_kr/forms/about/'"></div>
       <img src="../image/nochun.png" alt="" id="nochun" class="mapbackcards">
-      <div class="nochun_in"></div>
+      <div id="nochun_in" class="hoverbox_in"></div>
 
-      <div id="gunchook_hover" class="hovercards"></div>
+      <div id="gunchook_hover" class="hovercards" onclick="location.href='https://www.google.com/intl/ko_kr/forms/about/'"></div>
       <img src="../image/gunchook.png" alt="" id="gunchook" class="mapbackcards">
-      <div class="gunchook_in"></div>
+      <div id="gunchook_in" class="hoverbox_in"></div>
 
-      <div id="sajasang_hover" class="hovercards"></div>
+      <div id="sajasang_hover" class="hovercards" onclick="open_warning()"></div>
       <img src="../image/sajasang.png" alt="" id="sajasang" class="mapbackcards">
-      <div class="sajasang_in"></div>
+      <div id="sajasang_in" class="hoverbox_in"></div>
 
       <div class="startbutton" onclick="location.href='https://gather.town/app/G5LykIxZ5ha1HlhK/HY_Tutorial'"><p>START</p></div>
     </div>
+    <div id="cardbutton" class="sidebutton" onclick="opencards()">카드 보기</div>
+    <div class="cardnews_container">
+      <div class="semo1" onclick="pointminus()"></div>
+      <div id="card0" class="cardnews"></div>
+      <div id="card1" class="cardnews"></div>
+      <div id="card2" class="cardnews"></div>
+      <div id="card3" class="cardnews"></div>
+      <div id="card4" class="cardnews"></div>
+      <div id="card5" class="cardnews"></div>
+      <div class="semo2" onclick="pointplus()"></div>
+      <div class="closecards" onclick="closecards()"></div>
+    </div>
+    <div id="posterbutton" class="sidebutton">포스터 보기</div>
+    <div class="poster"></div>
+    <div class="no_mobile"><p>모바일로는 접속이 안돼요 !<br>PC 크롬으로 접속해주세요 !</p></div>
+
+    <script src="../js/warning.js"></script>
 
   </body>
 </html>

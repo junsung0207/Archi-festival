@@ -1,0 +1,127 @@
+.sidebutton{
+  position:absolute;
+  background-color:transparent;
+  z-index: 4;
+  border:2px solid black;
+  color:black;
+
+  text-align: center;
+  padding:15px 0 15px 30px;
+  font-size:13pt;
+
+  width:150px;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor:pointer;
+
+  transition:0.1s;
+}
+
+#cardbutton{
+  top:30px;
+  left:-2vw;
+}
+
+#posterbutton{
+  top:90px;
+  left:-2vw;
+}
+
+#cardbutton:hover{
+  width:160px;
+  border:2px solid #596571;
+  transition-timing-function: ease-out;
+
+  left:0;
+  background-color:#596571;
+  color:#E6F6F3;
+  padding:15px 0;
+}
+
+#posterbutton:hover{
+  width:160px;
+  border:2px solid #596571;
+  transition-timing-function: ease-out;
+  left:0;
+  background-color:#596571;
+  color:#E6F6F3;
+  padding:15px 0;
+}
+
+.cardnews_container{
+  display:none;
+
+  z-index: 7;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color:rgba(0,0,0,0.5);
+}
+
+.semo1{
+  width:50px;
+  height:100px;
+  margin-right:40px;
+  background-image:url("../image/semo1.png");
+  cursor:pointer;
+}
+
+.semo2{
+  width:50px;
+  height:100px;
+  margin-left:40px;
+  background-image:url("../image/semo2.png");
+  cursor:pointer;
+}
+
+.cardnews{
+  z-index: 8;
+  width:700px;
+  height:700px;
+  background-size:cover;
+  display:none;
+}
+
+#card0{
+  background-image:url("../image/0.png");
+  display:block;
+}
+
+#card1{
+  background-image:url("../image/1.png");
+}
+
+#card2{
+  background-image:url("../image/2.png");
+}
+
+#card3{
+  background-image:url("../image/3.png");
+}
+
+#card4{
+  background-image:url("../image/4.png");
+}
+
+#card5{
+  background-image:url("../image/5.png");
+}
+
+.closecards{
+  width:40px;
+  height:40px;
+  background-image:url("../image/xbox.png");
+  background-size:cover;
+  position:absolute;
+  top:132px;
+  margin-left: 640px;
+  z-index: 8;
+  cursor:pointer;
+}
