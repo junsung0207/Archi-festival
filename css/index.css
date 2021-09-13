@@ -283,7 +283,7 @@ body{
   font-size:14pt;
   width:600px;
   height:14px;
-  z-index: 11;
+  z-index: 1;
 
   position:absolute;
   top:750px;
