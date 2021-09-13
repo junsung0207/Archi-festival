@@ -78,3 +78,34 @@
     opacity: 1;
   }
 }
+
+.instagram{
+  width:30px;
+  height:30px;
+  position:absolute;
+  top:93vh;
+  right:140px;
+  background-image:url("../image/instagram.png");
+  background-size:contain;
+  z-index: 11;
+
+  cursor:pointer;
+}
+
+.instagram_text{
+  width:30px;
+  height:30px;
+  position:absolute;
+  top:94vh;
+  right:105px;
+  z-index: 11;
+}
+
+.mynameisjunsung{
+  font-family:sans-serif;
+  font-size:7pt;
+  position:absolute;
+  top:97vh;
+  right:10px;
+  z-index: 11;
+}

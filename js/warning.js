@@ -1,7 +1,7 @@
-$( window ).on( "load", function() {
-   console.log( "로딩성공" );
-   $(".loading").css("visibility","hidden");
- });
+// $( window ).on( "load", function() {
+//    console.log( "로딩성공" );
+//    $(".loading").css("visibility","hidden");
+//  });
 
 // --------------main페이지 이동 ---------
 function gotomain(){
