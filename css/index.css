@@ -275,6 +275,17 @@ body{
   transition:0.2s;
 }
 
+.Plustext1{
+  color:black;
+  font-size:14pt;
+  width:600px;
+  height:14px;
+  z-index: 11;
+
+  position:absolute;
+  top:780px;
+  text-align: center;
+}
 
 .startbutton{
   width:280px;
@@ -304,7 +315,7 @@ body{
 
 .startbutton p {
   text-align: center;
-  font-size:40pt;
+  font-size:30pt;
 
   -ms-user-select: none;
   -moz-user-select: -moz-none;
@@ -320,5 +331,6 @@ body{
   }
   .no_mobile{
     display:flex;
+    font-family: sans-serif;
   }
 }
