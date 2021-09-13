@@ -17,6 +17,7 @@
   top:50px;
   width:680px;
   height:740px;
+  font-family: sans-serif;
 
 
   background-color:white;
@@ -28,8 +29,8 @@
 .gifts_text p{
   position: absolute;
   z-index: 8;
-  font-size:14pt;
-  font-family: "pfstar-s";
+  font-size:10pt;
+  font-family: sans-serif;
 }
 
 .gifts_image{
