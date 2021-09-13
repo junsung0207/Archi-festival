@@ -1,0 +1,31 @@
+.minimap_container{
+  display:none;
+
+  z-index: 7;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color:rgba(0,0,0,0.5);
+}
+
+.minimap{
+  width:1300px;
+  height:800px;
+  background-image: url("../image/minimap.png");
+}
+
+.closemini{
+  width:40px;
+  height:40px;
+  background-image:url("../image/xbox.png");
+  background-size:cover;
+  position:relative;
+  top:-380px;
+  left:-40px;
+  z-index: 9;
+  cursor:pointer;
+}

@@ -30,6 +30,23 @@
   left:-2vw;
 }
 
+#giftsbutton{
+  top:150px;
+  left:-2vw;
+}
+
+#minibutton{
+  top:210px;
+  left:-2vw;
+  text-decoration: none;
+}
+
+#pdfbutton{
+  top:270px;
+  left:-2vw;
+  text-decoration: none;
+}
+
 #cardbutton:hover{
   width:160px;
   border:2px solid #596571;
@@ -45,6 +62,40 @@
   width:160px;
   border:2px solid #596571;
   transition-timing-function: ease-out;
+
+  left:0;
+  background-color:#596571;
+  color:#E6F6F3;
+  padding:15px 0;
+}
+
+#giftsbutton:hover{
+  width:160px;
+  border:2px solid #596571;
+  transition-timing-function: ease-out;
+
+  left:0;
+  background-color:#596571;
+  color:#E6F6F3;
+  padding:15px 0;
+}
+
+#minibutton:hover{
+  width:160px;
+  border:2px solid #596571;
+  transition-timing-function: ease-out;
+
+  left:0;
+  background-color:#596571;
+  color:#E6F6F3;
+  padding:15px 0;
+}
+
+#pdfbutton:hover{
+  width:160px;
+  border:2px solid #596571;
+  transition-timing-function: ease-out;
+
   left:0;
   background-color:#596571;
   color:#E6F6F3;
@@ -87,6 +138,7 @@
   height:700px;
   background-size:cover;
   display:none;
+  top:132px;
 }
 
 #card0{
@@ -119,9 +171,9 @@
   height:40px;
   background-image:url("../image/xbox.png");
   background-size:cover;
-  position:absolute;
-  top:132px;
-  margin-left: 640px;
-  z-index: 8;
+  position:relative;
+  top:-323px;
+  left:783px;
+  z-index: 9;
   cursor:pointer;
 }

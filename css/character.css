@@ -1,0 +1,80 @@
+.character{
+  width:501px;
+  height:88px;
+  background-color:white;
+  z-index: 10;
+  position:absolute;
+  top:88vh;
+  left:1.2vw;
+  background-image:url("../image/character.gif");
+  background-color:transparent;
+}
+
+#Maintext #title1{
+  -webkit-animation:left ease;
+  animation:left ease;
+  -webkit-animation-duration:1s;
+          animation-duration:1s;
+  -webkit-animation-delay:0.6s;
+          animation-delay:0.6s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+#Maintext #title2{
+  -webkit-animation:right ease;
+  animation:right ease;
+  -webkit-animation-duration:1s;
+          animation-duration:1s;
+  -webkit-animation-delay:0.8s;
+          animation-delay:0.8s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+
+
+
+@-webkit-keyframes left {
+  0% {
+    margin-left: -2%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    margin-left: -2%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes right{
+  0% {
+    margin-right: -2%;
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes right{
+  0% {
+    margin-right: -2%;
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}

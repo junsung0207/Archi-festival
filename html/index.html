@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/warning.css">
     <link rel="stylesheet" href="../css/cardnews.css">
+    <link rel="stylesheet" href="../css/poster.css">
+    <link rel="stylesheet" href="../css/gifts.css">
+    <link rel="stylesheet" href="../css/minimap.css">
+    <link rel="stylesheet" href="../css/character.css">
+    <script src="../js/jquery.js"></script>
   </head>
   <body>
+    <div class="loading">로딩중입니다. 첫 접속시에만 조금 걸려요!</div>
     <div class="main_background">
-      <div id="Maintext">현실에선 건축학도인 내가,<br>이 세계에선 픽셀?!</div>
+      <div id="Maintext"><span id="title1">현실에선 건축학도인 내가,</span><br><span id="title2">이 세계에선 픽셀?!</span></div>
       <div id="Suptext">한양대 건축계열 축제</div>
       <p> 건물 클릭시, 해당 예약 페이지로 이동합니다.</p>
       <div class="mapbackdiv"></div>
@@ -23,15 +29,27 @@
         <p>해당 컨텐츠는 예약 시스템이 <br>없습니다.</p>
       </div>
 
-      <div id="sinbongwan_hover" class="hovercards" onclick="location.href='https://www.google.com/intl/ko_kr/forms/about/'"></div>
+      <div id="sinbongwan_hover" class="hovercards" onclick="open_choosen()"></div>
       <img src="../image/sinbongwan.png" alt="" id="sinbongwan" class="mapbackcards" >
       <div id="sinbongwan_in" class="hoverbox_in"></div>
 
-      <div id="nochun_hover" class="hovercards" onclick="location.href='https://www.google.com/intl/ko_kr/forms/about/'"></div>
+      <div class="choosen">
+        <div class="choosen_close_box" onclick="close_choosen()"></div>
+        <p>어디로 신청하시겠습니까?</p>
+        <div class="choosen_checkbox_container">
+          <div class="choosen_checkbox" onclick="window.open('https://forms.gle/JzADonLc4rcJvpKA8')">카트라이더러쉬<br>스피드개인전</div>
+          <div class="choosen_checkbox" onclick="window.open('https://forms.gle/sgK7qdejsX16yZYp8')">카트라이더러쉬<br><span style="font-size:14pt">스피드/아이템 팀전</span></div>
+          <div class="choosen_checkbox" onclick="window.open('https://forms.gle/xpBrW6eU9uTi1K5j8')">배틀그라운드<br>개인전</div>
+          <div class="choosen_checkbox" onclick="window.open('https://forms.gle/54CwD9opW9oh6K318')">배틀그라운드<br>스쿼드전</div>
+          <div class="choosen_checkbox" onclick="window.open('https://forms.gle/DKQyKh5vtcHWp9Hj8')">크레이지<br>아케이드</div>
+        </div>
+      </div>
+
+      <div id="nochun_hover" class="hovercards" onclick="window.open('https://forms.gle/TB1rmg43dMuB9ekB9')"></div>
       <img src="../image/nochun.png" alt="" id="nochun" class="mapbackcards">
       <div id="nochun_in" class="hoverbox_in"></div>
 
-      <div id="gunchook_hover" class="hovercards" onclick="location.href='https://www.google.com/intl/ko_kr/forms/about/'"></div>
+      <div id="gunchook_hover" class="hovercards" onclick="window.open('https://forms.gle/kRsphuBkcfKK7E4QA')"></div>
       <img src="../image/gunchook.png" alt="" id="gunchook" class="mapbackcards">
       <div id="gunchook_in" class="hoverbox_in"></div>
 
@@ -39,10 +57,11 @@
       <img src="../image/sajasang.png" alt="" id="sajasang" class="mapbackcards">
       <div id="sajasang_in" class="hoverbox_in"></div>
 
-      <div class="startbutton" onclick="location.href='https://gather.town/app/G5LykIxZ5ha1HlhK/HY_Tutorial'"><p>START</p></div>
+      <div class="startbutton" onclick="gotomain()"><p>START</p></div>
     </div>
     <div id="cardbutton" class="sidebutton" onclick="opencards()">카드 보기</div>
     <div class="cardnews_container">
+      <div class="closecards" onclick="closecards()"></div>
       <div class="semo1" onclick="pointminus()"></div>
       <div id="card0" class="cardnews"></div>
       <div id="card1" class="cardnews"></div>
@@ -51,10 +70,61 @@
       <div id="card4" class="cardnews"></div>
       <div id="card5" class="cardnews"></div>
       <div class="semo2" onclick="pointplus()"></div>
-      <div class="closecards" onclick="closecards()"></div>
     </div>
-    <div id="posterbutton" class="sidebutton">포스터 보기</div>
-    <div class="poster"></div>
+    <div id="posterbutton" class="sidebutton" onclick="openposter()">포스터 보기</div>
+    <div class="poster_container">
+      <div class="poster"></div>
+      <div class="closeposter" onclick="closeposter()"></div>
+    </div>
+
+    <div id="giftsbutton" class="sidebutton" onclick="opengifts()">경품 보기</div>
+    <div class="gifts_container">
+      <div class="gifts_text">
+        <h1>축제 전체 경품</h1>
+        <p>
+          <strong>1) 게임컨텐츠 우승자 (총 105만원)</strong><br>
+          OX퀴즈 우승자: 골드킹 콤보+치즈볼+뿌링핫도그+콜라 1.25L (3만원) <br>
+          카트라이더 러쉬(스피드 개인전)
+           1등 : 컬쳐랜드 문화상품권 4만원권 <br>
+           2등 : 컬쳐랜드 문화상품권3만원권 <br>
+           3등 : bbq황금올리브+콜라 <br>
+          카트라이더 러쉬(스피드 팀전): 우승1팀 4인 (인당 3만원 상당의 도미노피자 한판) <br>
+          카트라이더 러쉬(아이템 팀전) 우승1팀 4인 (인당 3만원 상당의 피자헛 치즈크러스트 티본스테이크 & 쉬림프L) <br>
+          배틀그라운드(솔로전): 1등(6만원 상당의 피자 + 치킨 세트), 2등(4만원 상당의 치킨세트), 3등(bbq황금올리브치킨+콜라) <br>
+          배틀그라운드(스쿼드전): 우승1팀 4인 (인당 4만원 상당의 뿌링클+후라이드+치즈볼+콜라 1.25L) <br>
+          크레이지아케이드(현장참여): 베라교환권5개, 커피교환권5개 (배스킨라빈스 싱글킹, 스타벅스 아이스 아메리카노T) <br>
+          건축관/과기관 방탈출: 1등(아웃백 6만원쿠폰), 2등(4만원 상당의 굽네 갈비천왕치킨+시카고피자+갈비치밥+콜라1.25L ), 3등(bbq황금올리브+콜라) <br>
+          리그오브레전드(학공전): 우승1팀 5인 (인당 문화상품권 5만원권) <br><br>
+          <strong>2) 게임승리예측 경품 배팅 (총 54만원)</strong> <br>
+          카트라이더 러쉬(스피드 팀전): 파리바게트 3000원권(40명) <br>
+          카트라이더 러쉬(아이템 팀전): 파리바게트 3000원권(40명) <br>
+          리그오브레전드(학공전): 배스킨라빈스 싱글레귤러(100명) <br><br>
+          <strong>3) 인스타스토리 공유 이벤트 (총 30만원)</strong> <br>
+          메타버스 온라인 축제 인스타 스토리 해시태그 공유 인증: 공차 블랙밀크티+펄(50명)<br>
+          게더타운 지정 포토존 촬영본 인스타 스토리 공유 인증: 스타벅스 아이스아메리카노T(50명) <br><br>
+          <strong>4) 보물찾기 (총 55만원)</strong> <br>
+          보물 오브젝트(1): 담요(20명)<br>
+          보물 오브젝트(2): 죠르디 목쿠션(10명)<br>
+          보물 오브젝트(3): 빈백(5명)<br><br>
+          <strong>5) 경품추첨 (총 65만원)</strong><br>
+          당첨자 경품 증정(16명)<br>
+          (맥도날드 만원권x5명, 필로우세트x4명, 스타벅스 3만원권x3명, 안마기x2명, 꽃등심x1명, 에어팟프로x1명)<br><br>
+          ※상황에 따라 제공되는 경품은 달라질 수 있습니다.<br>
+          ※경품 지급까지 약간의 시간이 걸릴 수 있습니다.
+        </p>
+      </div>
+      <img src="../image/airpods.png" alt="에어팟프로" class="gifts_image">
+      <div class="closegifts" onclick="closegifts()"></div>
+    </div>
+
+    <div id="minibutton" class="sidebutton" onclick="openminimap()">게더타운 미니맵</div>
+    <div class="minimap_container">
+      <div class="minimap"></div>
+      <div class="closemini" onclick="closeminimap()"></div>
+    </div>
+    <a href="../file/Festival.pdf" download="축제 기획안" id="pdfbutton" class="sidebutton">축제 기획안</a>
+    <div class="character"></div>
+
     <div class="no_mobile"><p>모바일로는 접속이 안돼요 !<br>PC 크롬으로 접속해주세요 !</p></div>
 
     <script src="../js/warning.js"></script>
