@@ -17,3 +17,8 @@
   src: url("../font/PFstardustS+Bold.ttf");
   font-family: "pfstar-s-bold";
 }
+
+@font-face{
+  src: url("../font/AppleSDGothicNeoM.ttf");
+  font-family: "AppleM";
+}

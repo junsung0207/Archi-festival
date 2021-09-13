@@ -3,6 +3,15 @@
 //    $(".loading").css("visibility","hidden");
 //  });
 
+
+//---------------맥 OS
+if(navigator.platform.match("Mac") !== null) {
+      var body = document.getElementsByTagName('body')[0].style = "font-family: 'AppleM', sans-serif !important;";
+      var title = document.getElementById("Maintext").style = "font-family: 'AppleM', sans-serif !important; line-height:80px;";
+      var title = document.getElementById("Suptext").style = "font-family: 'AppleM', sans-serif !important; line-height:8px;";
+}
+
+
 // --------------main페이지 이동 ---------
 function gotomain(){
   alert("링크는 당일 축제 시작 전 공개됩니다.");

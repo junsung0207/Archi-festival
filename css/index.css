@@ -1,12 +1,14 @@
 html {
     scroll-behavior: smooth;
-    font-family: "pfstar", sans-serif;
+
+
 }
 
 body{
   -ms-overflow-style: none; /* IE and Edge */
    scrollbar-width: none; /* Firefox */
    margin:0;
+   font-family: "pfstar", sans-serif;
 
 }
 .no_mobile{
@@ -97,6 +99,7 @@ body{
   font-family:"pfstar",cursive;
   font-size:30pt;
   text-align:center;
+  line-height: 10px;
 }
 
 .mapbackdiv{
@@ -283,7 +286,7 @@ body{
   z-index: 11;
 
   position:absolute;
-  top:780px;
+  top:750px;
   text-align: center;
 }
 
