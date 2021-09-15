@@ -58,6 +58,10 @@ body{
           animation-duration:1.5s;
 }
 
+.main_background p{
+  text-align: center;
+}
+
 @-webkit-keyframes background_dif{
   0%{
     opacity:0.7;
