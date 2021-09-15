@@ -1,7 +1,8 @@
-// $( window ).on( "load", function() {
-//    console.log( "로딩성공" );
-//    $(".loading").css("visibility","hidden");
-//  });
+$( window ).on( "load", function() {
+   console.log( "로딩성공" );
+   $(".loading").css("visibility","hidden");
+   $(".main_background").css("display","flex");
+ });
 
 
 //---------------맥 OS
