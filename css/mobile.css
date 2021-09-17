@@ -24,6 +24,20 @@
   height:100px;
 }
 
+.cardwarningtext{
+  position:absolute;
+  z-index: 9;
+  right:30px;
+  top:590px;
+  width:100%;
+  font-size:13pt;
+
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
 .startbutton_mobile{
   width:320px;
   height:90px;
