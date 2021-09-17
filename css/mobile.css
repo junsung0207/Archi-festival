@@ -1,0 +1,133 @@
+.no_mobile{
+  display:none;
+  width:100%;
+  height:300px;
+  margin:0;
+  text-align:center;
+  font-size:4vw;
+  justify-content: center;
+  align-items: center;
+
+  top:10vh;
+  background-color:white;
+}
+
+.startbutton_mobile{
+  width:280px;
+  height:80px;
+  margin:0 auto;
+  border-radius:300px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+
+  background-color:white;
+  border-width: 5px;
+  border-color:black;
+  border:solid;
+  cursor:pointer;
+}
+
+.startbutton_mobile:active{
+  background-color:black;
+  color:white;
+  border-color:black;
+  transition: 0.2s;
+}
+
+.startbutton_mobile p {
+  text-align: center;
+  font-size:30pt;
+
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+
+
+.mobile_background_container{
+  width:100%;
+  height:2500px;
+  display:none;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  position:absolute;
+  top:500px;
+}
+
+.mobilecards{
+  width:90%;
+  height:450px;
+  /* border:1px solid black; */
+  background-size:contain;
+  background-position:0;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobilecards-text-container{
+  /* border:1px solid gray; */
+  width:77%;
+  height:450px;
+  text-align: center;
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+  color:white;
+  font-size:60pt;
+  font-family:'Black Han Sans',sans-serif;
+}
+.mobilecards_sidebox{
+  width:23%;
+  height:450px;
+  background-color:white;
+}
+.circle{
+  width:30px;
+  height:30px;
+  border-radius: 100px;
+  position:absolute;
+  top:420px;
+  right:70px;
+  background-color:#009bff;
+}
+
+#Cartrider_mobile{
+  background-image:url("../image/cartrider-mobile.png");
+}
+
+
+/* ----------------------------------------- */
+@media screen and (max-width: 1068px) {
+  .main_background{
+    display:none !important;
+  }
+  .no_mobile{
+    display:flex;
+    font-family: 'Gothic A1', sans-serif;
+  }
+  html{
+    background-image: url("../image/sitebackground-mobile.png");
+    background-size:80%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color:#ADEFF9;
+  }
+  body{
+    font-family:"Gothic A1", sans-serif;
+  }
+  .sidebutton{
+    display:none;
+  }
+  .mobile_background_container{
+    display:flex;
+  }
+}

@@ -1,7 +1,5 @@
 html {
     scroll-behavior: smooth;
-
-
 }
 
 body{
@@ -9,20 +7,6 @@ body{
    scrollbar-width: none; /* Firefox */
    margin:0;
    font-family: "pfstar", sans-serif;
-
-}
-.no_mobile{
-  display:none;
-  width:100%;
-  height:100vh;
-  background-color:gray;
-  margin:0;
-
-  text-align:center;
-  font-size:6vw;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .loading{
@@ -329,15 +313,4 @@ body{
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-}
-
-
-@media screen and (max-width: 1068px) {
-  .main_background{
-    display:none !important;
-  }
-  .no_mobile{
-    display:flex;
-    font-family: sans-serif;
-  }
 }
