@@ -9,14 +9,15 @@
   align-items: center;
 
   top:10vh;
-  background-color:white;
+  /* background-color:white; */
 }
 
 .startbutton_mobile{
-  width:280px;
-  height:80px;
+  width:320px;
+  height:90px;
   margin:0 auto;
   border-radius:300px;
+  padding: 10px 0 0 0;
 
   display:flex;
   justify-content: center;
@@ -39,7 +40,9 @@
 
 .startbutton_mobile p {
   text-align: center;
-  font-size:30pt;
+  font-size:35pt;
+  font-family:"Black Han Sans",sans-serif;
+  font-weight:300;
 
   -ms-user-select: none;
   -moz-user-select: -moz-none;
@@ -71,6 +74,9 @@
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+
+  filter: drop-shadow(4px 3px 3px rgba(0,0,0,0.3));
+  background-color:transparent;
 }
 
 .mobilecards-text-container{
@@ -81,27 +87,71 @@
   display:flex;
   justify-content:flex-end;
   align-items:flex-end;
+  margin-right:40px;
   color:white;
   font-size:60pt;
   font-family:'Black Han Sans',sans-serif;
+  background-color:transparent;
 }
 .mobilecards_sidebox{
   width:23%;
   height:450px;
   background-color:white;
 }
+.sidebox_text{
+  writing-mode:vertical-rl;
+  text-align: center;
+  margin:15px 0 0 10px;
+  font-size:13pt;
+  font-family:'Source Sans Pro';
+  font-weight: 600;
+  letter-spacing: 5px;
+  color:rgba(0,0,0,0.5);
+  height:120px;
+}
 .circle{
-  width:30px;
-  height:30px;
+  width:60px;
+  height:60px;
   border-radius: 100px;
+  margin:230px 0 0 120px;
+
+}
+.mobilecards_active{
+  width:78%;
+  height:450px;
+  background-color:gray;
   position:absolute;
-  top:420px;
-  right:70px;
-  background-color:#009bff;
+  display:none;
+  z-index: 6;
 }
 
 #Cartrider_mobile{
   background-image:url("../image/cartrider-mobile.png");
+}
+
+#Lol_mobile{
+  background-image:url("../image/lol-mobile.png");
+}
+
+#Sidebox_text{
+  letter-spacing: 0px;
+  font-size:10pt;
+}
+
+#Crazyarcade_mobile{
+  background-image:url("../image/crazyarcade-mobile.png");
+}
+
+#Battleground_mobile{
+  background-image:url("../image/battleground-mobile.png");
+}
+
+#Escape_mobile{
+  background-image:url("../image/escape-mobile.png");
+}
+
+.mobilecards:active .mobilecards_active{
+  display:flex;
 }
 
 
@@ -116,10 +166,10 @@
   }
   html{
     background-image: url("../image/sitebackground-mobile.png");
-    background-size:80%;
+    background-size:100%;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color:#ADEFF9;
+    background-color:#B8F1F9;
   }
   body{
     font-family:"Gothic A1", sans-serif;
@@ -129,5 +179,23 @@
   }
   .mobile_background_container{
     display:flex;
+  }
+
+  .character{
+    position:absolute;
+    top:420px;
+    left:1.2vw;
+  }
+
+  .instagram{
+    width:22px;
+    height:22px;
+    top:3000px;
+  }
+  .instagram_text{
+    top:3000px;
+  }
+  .mynameisjunsung{
+    top:3030px;
   }
 }
