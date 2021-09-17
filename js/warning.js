@@ -97,3 +97,35 @@ function openminimap(){
 function closeminimap(){
   var cardnews_container = document.getElementsByClassName("minimap_container")[0].style = "display:none;";
 }
+
+var mobilecartpoint = 0;
+var mobilepubgpoint = 0;
+
+function openmobilecart(){
+  mobilecartpoint = (mobilecartpoint + 1)%2;
+  if(mobilecartpoint == 1){
+    var mobilecart = document.getElementById("Cartrider_mobile").style = "background-image:url('../image/cartrider-mobile-hover.png');";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[0].style = "display:flex;";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[1].style = "display:flex;";
+  }
+  else{
+    var mobilecart = document.getElementById("Cartrider_mobile").style = "background-image:url('../image/cartrider-mobile.png');";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[0].style = "display:none;";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[1].style = "display:none;";
+  }
+}
+
+function openmobilepubg(){
+  mobilepubgpoint = (mobilepubgpoint + 1)%2;
+  if(mobilepubgpoint == 1){
+    var mobilecart = document.getElementById("Battleground_mobile").style = "background-image:url('../image/battleground-mobile-hover.png');";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[2].style = "display:flex;";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[3].style = "display:flex;";
+  }
+  else{
+    var mobilecart = document.getElementById("Battleground_mobile").style = "background-image:url('../image/battleground-mobile.png');";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[2].style = "display:none;";
+    var cardnews_container = document.getElementsByClassName("applycards_detail")[3].style = "display:none;";
+  }
+
+}

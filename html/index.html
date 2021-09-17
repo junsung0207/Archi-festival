@@ -140,45 +140,57 @@
     <div class="instagram" onclick="window.open('https://www.instagram.com/bisang_archi/')"></div><div class="instagram_text">@bisang_archi</div>
     <div class="mynameisjunsung">Copyright 건축계열 학생회&nbsp;비상아키,&nbsp; all rights reserved</div>
 
-    <div class="no_mobile"><p>모바일로는 축제 참가 신청만 가능해요 !<br>Windows PC 크롬으로 접속해주세요 !</p></div>
+  <div class="mobile-container">
+    <div class="no_mobile"><p>현실에선 건축학도인 내가,<br>이 세계에선 픽셀?!</p></div>
+    <div class="no_mobile_warningtext">꼭 Chrome으로 접속해주세요.<br>모바일로는 "참가 신청"만 가능합니다.<br>PC 크롬버전으로 접속하면 모든 내용을 볼 수 있어요!</div>
     <div class="startbutton_mobile" onclick="window.open('https://forms.gle/3Bc18C3RKUFPEm5r7')"><p>축제 참가 신청</p></div>
     <div class="mobile_background_container">
-      <div class="mobilecards" id="Cartrider_mobile">
-        <div class="mobilecards-text-container">카트라이더</div>
+      <div class="mobilecards" id="Cartrider_mobile" onclick="openmobilecart()">
+        <div class="applycards" id="Cartrider_mobile_applycard">
+          <div class="applycards_detail" onclick="window.open('https://forms.gle/Xhtx21NqRx4mDbpB9')">개인전</div>
+          <div class="applycards_detail" onclick="window.open('https://forms.gle/75zTFx1X67RfLvd86')">팀전</div>
+        </div>
+        <div class="mobilecards-text-container" id="Cartrider_mobile_applycard">카트라이더</div>
         <div class="mobilecards_sidebox">
           <div class="sidebox_text">Kartrider</div>
           <div class="circle" style="background-color:#146eb4;"></div>
         </div>
       </div>
-      <div class="mobilecards" id="Lol_mobile">
+      <div class="mobilecards" id="Lol_mobile" onclick="window.open('https://forms.gle/qN82tCyxoHiZc7g28')">
         <div class="mobilecards-text-container">롤 학공전</div>
         <div class="mobilecards_sidebox">
           <div class="sidebox_text" id="Sidebox_text">League of Legends</div>
           <div class="circle" style="background-color:#6a1392;"></div>
         </div>
       </div>
-      <div class="mobilecards" id="Crazyarcade_mobile">
+      <div class="mobilecards" id="Crazyarcade_mobile" onclick="window.open('https://forms.gle/5HFptBD63cjE9Roh8')">
         <div class="mobilecards-text-container">크레이지아케이드</div>
         <div class="mobilecards_sidebox">
-          <div class="sidebox_text" id="Sidebox_text">League of Legends</div>
+          <div class="sidebox_text" id="Sidebox_text">Crazy Arcade</div>
           <div class="circle" style="background-color:#ff5757;"></div>
         </div>
       </div>
-      <div class="mobilecards" id="Battleground_mobile">
+      <div class="mobilecards" id="Battleground_mobile" onclick="openmobilepubg()">
         <div class="mobilecards-text-container">배틀그라운드</div>
         <div class="mobilecards_sidebox">
-          <div class="sidebox_text" id="Sidebox_text">League of Legends</div>
+          <div class="sidebox_text" id="Sidebox_text">Battleground</div>
           <div class="circle" style="background-color:#d5aa00;"></div>
         </div>
+        <div class="applycards" id="Cartrider_mobile_applycard">
+          <div class="applycards_detail" onclick="window.open('https://forms.gle/pweHKKxbdiQ9Ky6Y6')">개인전</div>
+          <div class="applycards_detail" onclick="window.open('https://forms.gle/wDnW8iNv3rLQf5kA6')">스쿼드전</div>
+        </div>
       </div>
-      <div class="mobilecards" id="Escape_mobile">
+      <div class="mobilecards" id="Escape_mobile"  onclick="window.open('https://forms.gle/Y7cGPy8KvfD4FZtp8')">
         <div class="mobilecards-text-container">방탈출</div>
         <div class="mobilecards_sidebox">
-          <div class="sidebox_text" id="Sidebox_text">League of Legends</div>
-          <div class="circle" style="background-color:#510909;"></div>
+          <div class="sidebox_text" id="Sidebox_text2">Escape from Architecture Center</div>
+          <div class="circle" style="background-color:#510909;margin-top:160px;"></div>
         </div>
       </div>
     </div>
+  </div>
+
 
 
 
