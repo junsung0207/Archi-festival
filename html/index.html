@@ -19,14 +19,18 @@
     <link rel="stylesheet" href="../css/minimap.css">
     <link rel="stylesheet" href="../css/character.css">
     <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/announce.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
     <script src="../js/jquery.js"></script>
   </head>
   <body>
+
+
     <div class="loading">로딩중입니다. 첫 접속시에만 조금 걸려요!</div>
     <div class="main_background">
+
       <div id="Maintext"><span id="title1">현실에선 건축학도인 내가,</span><br><span id="title2">이 세계에선 픽셀?!</span></div>
       <div id="Suptext">한양대 건축계열 축제</div>
       <p> ※Mac OS에서는 사이트가 깨질 수 있습니다. 되도록 Window PC 크롬으로 접속해주세요.<br>건물 클릭시, 해당 예약 페이지로 이동합니다.</p>
@@ -69,7 +73,14 @@
       <div id="sajasang_in" class="hoverbox_in"></div>
 
       <div class="Plustext1">인스타 공유 이벤트 참여시, <strong>캡쳐본</strong>을 학생회 인스타로 꼭 보내주세요! <br>축제 참여 링크는 당일에 공지됩니다.</div>
+
       <div class="startbutton" onclick="window.open('https://forms.gle/3Bc18C3RKUFPEm5r7')"><p>축제 참가 신청</p></div>
+      <div class="announcement-container" onclick="window.open('https://gather.town/invite?token=lA62bA3ZuMKI072IKaRyo3R3gBv3z11y')">
+        축제 참여 접속
+        <div class="close_boxbox" onclick="close_boxbox()"></div>
+      </div>
+
+
     </div>
     <div id="cardbutton" class="sidebutton" onclick="opencards()">카드 보기</div>
     <div class="cardnews_container">

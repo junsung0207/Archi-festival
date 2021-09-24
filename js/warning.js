@@ -98,6 +98,10 @@ function closeminimap(){
   var cardnews_container = document.getElementsByClassName("minimap_container")[0].style = "display:none;";
 }
 
+function close_boxbox(){
+  var cardnews_container = document.getElementsByClassName("announcement-container")[0].style = "display:none;";
+}
+
 var mobilecartpoint = 0;
 var mobilepubgpoint = 0;
 
