@@ -294,7 +294,7 @@ body{
   border-width: 5px;
   border-color:black;
   border:solid;
-  cursor:pointer;
+  cursor:not-allowed;
 }
 
 .startbutton:hover{
