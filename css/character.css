@@ -84,7 +84,7 @@
   height:30px;
   position:absolute;
   top:93vh;
-  right:140px;
+  right:240px;
   background-image:url("../image/instagram.png");
   background-size:contain;
   z-index: 11;
@@ -97,7 +97,7 @@
   height:30px;
   position:absolute;
   top:94vh;
-  right:105px;
+  right:200px;
   z-index: 11;
 }
 
